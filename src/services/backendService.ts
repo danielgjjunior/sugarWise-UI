@@ -11,7 +11,7 @@ interface PredictionData {
   hba1cLevel: number;
 }
 
-const BACKEND_URL: string = 'https://5fb7-177-85-7-252.ngrok-free.app'; // Endereço do seu backend
+const BACKEND_URL: string = 'https://fe8c-177-85-7-252.ngrok-free.app'; // Endereço do seu backend
 
 export const sendPredictionRequest = async (data: PredictionData) => {
   try {
@@ -25,7 +25,9 @@ export const sendPredictionRequest = async (data: PredictionData) => {
       blood_glucose_level: data.blood_glucose_level,
       HbA1c_level: data.hba1cLevel,
     });
+    console.log(response.data)
     return response.data;
+    
   } catch (error) {
     console.log(error);
     throw new Error('Erro ao enviar requisição para o backend.');
