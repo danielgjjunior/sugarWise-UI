@@ -1,0 +1,67 @@
+{
+  "expo": {
+    "name": "sugarWise",
+    "slug": "sugarWise",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "assets/fonts/*"
+    ],
+    "packagerOpts": {
+      "assetExts": ["ttf"]
+    },
+    "extra": {
+      "fonts": [
+        {
+          "family": "Kodchasan",
+          "files": [
+            "kodchasan/Kodchasan-Regular.ttf",
+            "kodchasan/Kodchasan-Bold.ttf"
+          ]
+        }
+      ]
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "UIAppFonts": [
+          "Kodchasan-Bold.ttf",
+          "Kodchasan-Regular.ttf"
+        ]
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "manifest": {
+        "android": {
+          "fontFamily": [
+            "Kodchasan-Bold",
+            "Kodchasan-Regular"
+          ]
+        }
+      },
+      "permissions": [
+        "INTERNET",
+        "ACCESS_NETWORK_STATE",
+        "ACCESS_WIFI_STATE",
+        "CHANGE_NETWORK_STATE"
+      ],
+      "config": {
+        "useCleartextTraffic": true
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
